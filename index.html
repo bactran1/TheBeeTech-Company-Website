@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BEE TECHNOLOGIES</title>
+    <meta name = "viewport" content="width=device-width" inital-scale=1.0>
+    <!--ADD TITLE ICON-->
+    <!--FAVICON-->
+    <link rel="icon" href="/var/www/html/IMG_2287.PNG" 
+    type = "image/PNG" sizes="64x64">
+    <!--FOR APPLE/SAFARI ICON-->
+    <link rel="mask-icon" href="/var/www/html/IMG_2287.PNG">
+    <!--ADD FONTS-->
+    <link
+    href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="main-nav">
+            <a href="#" class="company-logo"><div>THE BEE TECHNOLOGIES</div></a>
+            <a href="#" id="header-home"><div>HOME</div></a>
+            <a href="#" id="header-abtus"><div>ABOUT US</div></a>
+            <a href="#" id="header-products"><div>PRODUCTS</div></a>
+            <a href="#" id="header-demo"><div>DEMO</div></a>
+            <a href="#" id="header-contact"><div>CONTACT</div></a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#111" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#111" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#111" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <li><a href = "#">Home1</a></li>
+            <li><a href = "#">Home2</a></li>
+            <li><a href = "#">Home3</a></li>
+            <li><a href = "#">Home4</a></li>
+            <li><a href = "#">Home5</a></li>
+        </ul>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick=closeSlideMenu()>&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </div>
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width='250px';
+            document.getElementById('main').style.marginLeft='250px';
+        }
+    </script>
+
+    <script>
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width='0px';
+            document.getElementById('main').style.marginLeft='0px';
+        }
+    </script>
+    
+</body>
+</html>
